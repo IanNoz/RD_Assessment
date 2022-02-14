@@ -1,0 +1,82 @@
+@media screen and (max-width: 600px) {
+/* TITLES */
+h1{
+    font-weight: bolder;
+    font-size: 30px;
+    letter-spacing: -1px;
+    word-spacing: 3px;
+
+    margin-bottom: 10px;
+}
+
+/* TOP MENU BANNER */
+#top_bar{
+    z-index: 11;
+}
+#main_menu ul{
+    position: absolute;
+    top: -100%;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    font-size: 20px;
+    text-align: left;
+    visibility: hidden;
+}
+#main_menu > ul li.dropdown:hover ul{
+    position: relative;
+    top: 0;
+    right: 0;
+    text-align: left;
+    background: var(--GREY);
+}
+/* HERO SECTION */
+#hero{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-columns: fr;
+    width: 100%;
+    height: 90vh;
+    vertical-align: middle;
+    overflow: hidden;
+}
+#hero .content{
+    margin: 30px;
+}
+#hero .left_cell{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    display: inline-block;
+    position: relative;
+    z-index: 10;
+    background: rgb(255, 255, 255, 0.5);
+}
+#hero .right_cell{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    display: inline-block;
+    position: relative;
+}
+#hero_slider .controls{
+    position: absolute;
+    bottom: 3%;
+    right: 3%;
+    z-index: 11;
+}
+
+/*  FOOTER */
+#footer_menu{
+    width:100%;
+    flex-direction: column;
+}
+
+/* Aux class to hide elements*/
+.visible{
+    visibility: visible!important;
+}
+}
